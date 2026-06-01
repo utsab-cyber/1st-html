@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Another Infinite Loop</title>
+        <script>
+            // Infinite loop with while(true)
+            // WARNING: In browser, this will freeze. Use with caution!
+            
+            var output = "";
+            var count = 0;
+            
+            // Limit to 100 iterations for browser safety
+            while (true) {
+                output += "<br> Utsab";
+                count++;
+                if (count >= 100) break;
+            }
+            
+            document.write(output + "<br> (Limited to 100 for browser safety)");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

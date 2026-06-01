@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>LCM - Least Common Multiple</title>
+        <script>
+            var x = prompt("Enter 1st number: ");
+            var y = prompt("Enter 2nd number: ");
+            
+            x = parseInt(x);
+            y = parseInt(y);
+            
+            var p = x;
+            var q = y;
+            var r;
+            
+            // Calculate GCD using Euclidean algorithm
+            while (x != 0 && y != 0) {
+                if (x > y) {
+                    x = x % y;
+                } else {
+                    y = y % x;
+                }
+            }
+            
+            var gcd = x + y;  // One of them will be 0, other is GCD
+            
+            // LCM = (a * b) / GCD
+            var lcm = (p * q) / gcd;
+            
+            document.write("<br> GCD = " + gcd);
+            document.write("<br> LCM = " + lcm);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

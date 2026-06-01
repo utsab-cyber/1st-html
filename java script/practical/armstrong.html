@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Armstrong Number</title>
+        <script>
+            var n = prompt("Enter a number: ");
+            n = parseInt(n);
+            var p = n; // Store original number
+            var c = 0; // Count digits
+            var q = n;
+            var sum = 0;
+            
+            // Count number of digits
+            while (q > 0) {
+                c++;
+                q = Math.floor(q / 10);
+            }
+            
+            // Calculate sum of digits raised to power c
+            while (n > 0) {
+                var r = n % 10;
+                sum = sum + Math.pow(r, c);
+                n = Math.floor(n / 10);
+            }
+            
+            // Check if Armstrong number
+            if (sum == p) {
+                document.write("<br> " + p + " is an Armstrong number");
+            } else {
+                document.write("<br> " + p + " is not an Armstrong number");
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

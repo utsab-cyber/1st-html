@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Pattern - Continuous Characters</title>
+        <script>
+            var n = prompt("Enter a number: ");
+            n = parseInt(n);
+            var output = "";
+            var a = 1;
+            
+            for (var i = 1; i <= n; i++) {
+                for (var j = 1; j <= n; j++) {
+                    output += String.fromCharCode(64 + a);
+                    a++;
+                }
+                output += "<br>";
+            }
+            
+            document.write(output);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Nobody Loop (Empty Body)</title>
+        <script>
+            var n = prompt("Enter a number: ");
+            n = parseInt(n);
+            var output = "";
+            
+            for (var i = 1; i <= n; i++);  // Note the semicolon - empty loop body
+            {
+                // This block is NOT part of the loop!
+                output += "<br> i = " + i;
+            }
+            
+            document.write(output + "<br> (i will be n+1 because loop ends with semicolon)");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

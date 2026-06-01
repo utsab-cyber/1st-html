@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Maximum of 4 Numbers using Ternary</title>
+        <script>
+            var x = prompt("Enter 1st number: ");
+            var y = prompt("Enter 2nd number: ");
+            var z = prompt("Enter 3rd number: ");
+            var w = prompt("Enter 4th number: ");
+            
+            x = parseInt(x);
+            y = parseInt(y);
+            z = parseInt(z);
+            w = parseInt(w);
+            
+            // Compare max of first two numbers
+            var p = w > x ? w : x;
+            
+            // Compare max of last two numbers
+            var r = y > z ? y : z;
+            
+            // Compare the two maxes
+            var q = p > r ? p : r;
+            
+            document.write("<br> q = " + q + " is maximum");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

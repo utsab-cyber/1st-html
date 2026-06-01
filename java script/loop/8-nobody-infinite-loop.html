@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Nobody Infinite Loop</title>
+        <script>
+            var output = "";
+            var count = 0;
+            
+            // Infinite loop with empty body
+            // WARNING: In browser, this will freeze. Use with caution!
+            
+            for (;;) {
+                count++;
+                if (count >= 100) break;  // Safety limit
+            };  // Empty body due to semicolon
+            {
+                output += "<br> This runs after the loop";
+            }
+            
+            document.write(output);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

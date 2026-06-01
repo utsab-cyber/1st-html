@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Pronic Number Check</title>
+        <script>
+            var n = prompt("Enter a number: ");
+            n = parseInt(n);
+            
+            // A pronic number is k*(k+1) for some integer k
+            var k = Math.floor(Math.sqrt(n));
+            
+            if ((k * (k + 1) == n) || (k * (k - 1) == n)) {
+                document.write("<br> " + n + " is a Pronic number");
+            } else {
+                document.write("<br> " + n + " is not a Pronic number");
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

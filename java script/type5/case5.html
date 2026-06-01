@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>type5 - case5</title>
+        <script>
+            // C code converted to JavaScript
+            int main()
+{   
+    int i,j,n,a=1;
+    printf("\n Enter a no:");
+    scanf("%d",&n);
+    for (i=1;i<=n;i++)
+    {    
+        a=i;
+        for (j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for (j=1;j<=i;j++)
+        {
+             if(a%2==0)
+            {
+                printf("1");
+            }
+            else
+            {
+                printf("0");
+            }
+            a++;
+        }
+      printf("\n");
+    }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

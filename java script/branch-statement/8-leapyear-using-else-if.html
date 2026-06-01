@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Leap Year using Else-If</title>
+        <script>
+            var year = prompt("Enter the year: ");
+            year = parseInt(year);
+            
+            if ((year % 100 == 0) && (year % 400 == 0)) {
+                document.write("<br> " + year + " is a Leap Year");
+            } else if ((year % 100 != 0) && (year % 4 == 0)) {
+                document.write("<br> " + year + " is a Leap Year");
+            } else {
+                document.write("<br> " + year + " is not a Leap Year");
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

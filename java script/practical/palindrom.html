@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Palindrome Number Check</title>
+        <script>
+            var n = prompt("Enter a number: ");
+            n = parseInt(n);
+            var x = n;  // Store original number
+            var y = 0;  // To store reversed number
+            
+            while (n > 0) {
+                var r = n % 10;
+                y = y * 10 + r;
+                n = Math.floor(n / 10);
+            }
+            
+            if (x == y) {
+                document.write("<br> " + x + " is a Palindrome number");
+            } else {
+                document.write("<br> " + x + " is not a Palindrome number");
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

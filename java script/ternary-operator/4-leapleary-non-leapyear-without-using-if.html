@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Leap Year using Ternary</title>
+        <script>
+            var year = prompt("Enter the year: ");
+            year = parseInt(year);
+            
+            var result = (((year % 100 == 0) && (year % 400 == 0)) || ((year % 100 != 0) && (year % 4 == 0))) ? "Leap Year" : "Non Leap Year";
+            
+            document.write("<br> " + result);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

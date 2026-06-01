@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Pattern - Alternating A and B</title>
+        <script>
+            var n = prompt("Enter a number: ");
+            n = parseInt(n);
+            var output = "";
+            var a = 1;
+            
+            for (var i = 1; i <= n; i++) {
+                for (var j = 1; j <= n; j++) {
+                    if (a % 2 == 0) {
+                        output += "B";
+                    } else {
+                        output += "A";
+                    }
+                    a++;
+                }
+                output += "<br>";
+            }
+            
+            document.write(output);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
